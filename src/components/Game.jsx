@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { WORD_LIST } from "./words";
-import { Wordle, GREEN, YELLOW, BLACK } from "./index";
+import { WORD_LIST } from "../words";
+import { Wordle, GREEN, YELLOW, BLACK } from "../index";
 
 const getRandomWord = () => WORD_LIST[Math.floor(Math.random() * WORD_LIST.length)];
 
 const Game = () => {
-  const [targetWord, setTargetWord] = useState(getRandomWord());
-  const [wordle, setWordle] = useState(new Wordle(targetWord));
-  const [guesses, setGuesses] = useState([]);
-  const [input, setInput] = useState("");
-  const [message, setMessage] = useState("");
+  const [targetWord, ] = useState(getRandomWord());// grabbing random word from word list
+  const [wordle, setWordle] = useState(new Wordle(targetWord));// creating wordle object based on that class
+  const [guesses, setGuesses] = useState([]); //array
+  const [input, setInput] = useState("");// input field to type word
+  const [message, setMessage] = useState(""); //alert message
 
   useEffect(() => {
     setWordle(new Wordle(targetWord));
-  }, [targetWord]);
+  }, [targetWord]); // observes the state of the inputed variable and only runs when the variable state changes
+  //Empty [] means -only run when the page 1st loads, No bracket= run when anything changes or load for the 1st time
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,8 +40,8 @@ const Game = () => {
   const getColor = (status) => {
     if (status === GREEN) return "bg-green-500";
     if (status === YELLOW) return "bg-yellow-400";
-    return "bg-gray-300";
-  };
+    if (status === BLACK) return "bg-gray-300";
+    };
 
   return (
     <div className="flex flex-col items-center mt-10">
