@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { WORD_LIST } from "./fiveLetterWordList";
+import { WORD_LIST } from "./words";
 import { Wordle, GREEN, YELLOW, BLACK } from "./index";
 
 const getRandomWord = () => WORD_LIST[Math.floor(Math.random() * WORD_LIST.length)];

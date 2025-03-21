@@ -1,4 +1,4 @@
-const fiveLetterWords = [
+export const WORD_LIST = [
     "aback",
     "abaft",
     "abase",
