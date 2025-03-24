@@ -21,13 +21,12 @@ A fully functional Wordle clone built with **React Vite** and **Tailwind CSS**, 
 ![Wordle Game Screenshot](./public/screenshot.png)
 
 ## 🛠️ Tech Stack
-## License - MIT
+## 📝 License - MIT
 
 - **Frontend:** React (Vite), Tailwind CSS
 - **CI/CD:** GitHub Actions
 - **Deployment:** AWS Amplify
-- **Testing:** (e.g. Vitest / Jest — add the one you use)
+- **Testing:** ( Jest  )
 
-## 📁 Project Structure
-## Developer: Noela Deane
+## Made with ❤️ by Noela Deane
 
