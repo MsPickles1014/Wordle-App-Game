@@ -1,12 +1,33 @@
-# React + Vite
+# Wordle App 🎯
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully functional Wordle clone built with **React Vite** and **Tailwind CSS**, featuring a modern UI with **gradient and glassmorphism**, deployed on **AWS Amplify**, and tested via **GitHub Actions**.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎮 Classic Wordle game mechanics (6 guesses to find the 5-letter word)
+- 🔀 Random daily word selection from a predefined list
+- ✅ Validation of guesses against allowed word list
+- 💅 Styled with Tailwind CSS (v3.4.17), using gradient & glassmorphism
+- 🌗 Dark mode toggle
+- ⚙️ GitHub Actions for CI: runs tests on every push
+- ☁️ Deployed on AWS Amplify
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 [Check it out on AWS Amplify](https://main.d24cfwr1nc2hsf.amplifyapp.com/)
+
+## 📸 Screenshots
+
+![Wordle Game Screenshot](./public/screenshot.png)
+
+## 🛠️ Tech Stack
+## License - MIT
+
+- **Frontend:** React (Vite), Tailwind CSS
+- **CI/CD:** GitHub Actions
+- **Deployment:** AWS Amplify
+- **Testing:** (e.g. Vitest / Jest — add the one you use)
+
+## 📁 Project Structure
+## Developer: Noela Deane
+
